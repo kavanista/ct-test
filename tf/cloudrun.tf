@@ -1,11 +1,11 @@
 resource "google_cloud_run_service" "default" {
-  name     = "flask-app"
+  name     = "helloworld"
   location = "us-central1"
 
   template {
     spec {
       containers {
-        image = "gcr.io/cointracker-379915/flask-app:0.1"
+        image = "gcr.io/cointracker-379915/helloworld:latest"
       }
     }
   }
