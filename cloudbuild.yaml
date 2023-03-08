@@ -14,5 +14,3 @@ steps:
   - '--platform'
   - 'managed'
   - '--allow-unauthenticated'
-
-images: [eu.gcr.io/$PROJECT_ID/helloworld:latest]
