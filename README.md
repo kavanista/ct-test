@@ -29,9 +29,9 @@ This repo contains the following:
 ## Potential Improvements
  
 * Unit Testing for Flask app and add a testing step in the Dockerfile 
-* Service Account and IAM bindings could have been used in a more granular fasion, but are fine for the purposes of this simple app.
+* GCP Service Accounts and IAM bindings/roles could have been used in a more granular fasion, but are fine for the purposes of this simple app
 * Implement a Makefile to faciliate local execution/testing and to faciliate pushing containers to GCR
-* A custom domian could be impelemnted via Terraform
+* A custom domain could be added (via Terraform) to bind the Cloud Run URL to something more apt
 
 
 ## Local Testing
