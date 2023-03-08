@@ -22,9 +22,9 @@ This repo contains the following:
 
 ## Design Motivations
 
-I felt it was appropriate to use Docker in order to maintain parity between dev and prod, it allowed for rapid local testing and deployment <br />
-I choose Google Cloud Run as a container runtime as it's simple and quick to implement and fits well with Cloud Build and GCR <br />
-Terraform was used for the IaC aspect as I feel the Google Cloud TF provider is quite well maintained and exceptionally documented
+* I felt it was appropriate to use Docker in order to maintain parity between dev and prod, it allowed for rapid local testing and deployment <br />
+* Google Cloud Run was selected as a container runtime as it's simple and quick to implement and fits well with Cloud Build and GCR <br />
+* Terraform was used for the IaC aspect as I feel the Google Cloud TF provider is quite well maintained and exceptionally documented
 
 ## Potential Improvements
  
