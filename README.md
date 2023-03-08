@@ -4,9 +4,9 @@ SRE interview assignment for Cointracker
 
 ## Overview
 
-Simple Python/Flask "Hello World" app 
-Built using Docker and pushed to Google Container Registry
-Terraform config to create Cloud Run and Cloud Build resources in GCP which deploy the app and enable CI/CD
+Simple Python/Flask "Hello World" app <br />
+Built using Docker and pushed to Google Container Registry<br />
+Terraform config to create Cloud Run and Cloud Build resources in GCP which deploy the app and enable CI/CD<br />
 
 
 ## Architecture / Components 
