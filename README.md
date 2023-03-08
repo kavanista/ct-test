@@ -26,6 +26,5 @@ terraform apply
 ```
 
 
-## CI/CD 
 
 Commits to the main branch will trigger a Cloud Build job that will build the container and deploy it to Cloud Run
