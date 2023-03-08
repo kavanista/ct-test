@@ -8,7 +8,32 @@ terraform {
 }
 
 provider "google" {
-  project = "cointracker-379915"
-  region  = "us-central1"
-  zone    = "us-central1-a"
+  project = "${var.project_id}"
+  region  = "${var.region}"
+  zone    = "${var.zone}"
 }
+
+
+locals {
+  project_apis = [
+    "serviceusage.googleapis.com",
+    "iam.googleapis.com",
+    "cloudbuild.googleapis.com",
+    "pubsub.googleapis.com",
+    "logging.googleapis.com",
+    "artifactregistry.googleapis.com",
+    "run.googleapis.com",
+    "storage-component.googleapis.com",
+    "containerregistry.googleapis.com",
+  ]
+}
+
+
+resource "google_project_service" "enabled_apis" {
+  project  = var.project_id
+  for_each = toset(local.project_apis)
+  service  = each.key
+
+  disable_on_destroy = false
+}
+
