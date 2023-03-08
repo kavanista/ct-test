@@ -2,6 +2,12 @@
 
 SRE interview assignment for Cointracker
 
+## Overview
+
+Simple Python/Flask "Hello World" app 
+Built using Docker and pushed to Google Container Registry
+Terraform config to create Cloud Run and Cloud Build resources in GCP which deploy the app and enable CI/CD
+
 ## Local Usage
 
 ```bash
@@ -26,5 +32,10 @@ terraform apply
 ```
 
 
+## CI/CD Pipeline
 
 Commits to the main branch will trigger a Cloud Build job that will build the container and deploy it to Cloud Run
+
+
+## Cloud Run URL
+[Hello World Flask app hosted in Google Cloud Run](https://helloworld-h6kixuyrhq-uc.a.run.app)
