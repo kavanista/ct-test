@@ -1,6 +1,6 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: [ 'build', '-t', 'eu.gcr.io/$PROJECT_ID/helloworld:latest', '.' ]
+  args: [ 'build', '-t', 'gcr.io/$PROJECT_ID/helloworld:latest', '.' ]
 
 - name: 'gcr.io/cloud-builders/gcloud'
   args:
@@ -8,7 +8,7 @@ steps:
   - 'deploy'
   - 'helloworld'
   - '--image'
-  - 'eu.gcr.io/$PROJECT_ID/helloworld:latest'
+  - 'gcr.io/$PROJECT_ID/helloworld:latest'
   - '--region'
   - 'us-central1'
   - '--platform'
