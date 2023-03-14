@@ -1,8 +1,8 @@
 steps:
-- name: 'eu.gcr.io/cloud-builders/docker'
+- name: 'gcr.io/cloud-builders/docker'
   args: [ 'build', '-t', 'eu.gcr.io/$PROJECT_ID/helloworld:latest', '.' ]
 
-- name: 'eu.gcr.io/cloud-builders/gcloud'
+- name: 'gcr.io/cloud-builders/gcloud'
   args:
   - 'run'
   - 'deploy'
