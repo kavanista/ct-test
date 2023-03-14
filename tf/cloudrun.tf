@@ -5,7 +5,7 @@ resource "google_cloud_run_service" "default" {
   template {
     spec {
       containers {
-        image = "gcr.io/cointracker-379915/helloworld:latest"
+        image = "eu.gcr.io/cointracker-379915/helloworld:latest"
       }
     }
   }
